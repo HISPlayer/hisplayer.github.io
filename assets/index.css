@@ -327,7 +327,7 @@
   }
 
   .sdk-card-logo {
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -718,5 +718,28 @@
   @media only screen and (min-height: 1127px) and (min-width:  48em){
     .wrapper{
       height: 100vh;
+    }
+  }
+
+  @media screen and (min-width: 48em){
+    .menu-category-list {
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    .menu-item {
+      grid-column: span 2;
+    }
+
+    .menu-item-wide {
+      grid-column: span 3;
+    }
+
+    .menu-item-wide .sdk-card-actions {
+      flex-wrap: nowrap;
+    }
+
+    .menu-item-wide .sdk-btn {
+      flex: 1 1 0;
+      min-width: 0;
     }
   }

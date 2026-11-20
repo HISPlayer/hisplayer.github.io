@@ -331,7 +331,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 7.5em;
+    height: 8.1em;
     padding: 0.4em 0 1.2em;
   }
 
@@ -354,6 +354,7 @@
     justify-content: center;
     align-items: stretch;
     gap: 0.5em;
+    margin-top: auto;
   }
 
   .sdk-btn {
@@ -763,16 +764,13 @@
       grid-column: span 3;
     }
 
-    .menu-item-wide .sdk-card-actions {
-      flex-wrap: nowrap;
-    }
+  }
 
-    .menu-item-wide .sdk-btn {
-      flex: 1 1 0;
-      min-width: 0;
-    }
+  .menu-item-wide .sdk-card-actions {
+    flex-wrap: nowrap;
+  }
 
-    .menu-item-wide .sdk-btn-recommended {
-      flex-grow: 1.3;
-    }
+  .menu-item-wide .sdk-btn {
+    flex: 1 1 0;
+    min-width: 0;
   }
